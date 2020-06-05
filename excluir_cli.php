@@ -5,7 +5,9 @@
 		$id=$_GET['id'];
 		$sql="DELETE FROM cliente where id_cli=$id";
 		$pdo->query($sql);
-		header("Location:index.php");
+		header("Location:print_cli.php");
 
 	}
  ?>
+
+      

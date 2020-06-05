@@ -1,11 +1,13 @@
  <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Actualização do Cliente</title>
+    <title>Inserção do Funcionario</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,29 +21,29 @@
     <![endif]-->
   </head>
   <body >
-    <?php require 'edicliente.php'; ?>
+    <?php
+      require'edifunc.php';?>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <form method="POST">
+          <form method="post">
             <div class="form-group">
-               <label for="txnome">Nome do cliente</label>
-               <input type="text" name="nome" class="form-control" id="txnome" value="<?php echo $cli['nome_cliente'];?>"/>
-               <label for="txbi">BI</label>
-               <input type="text" name="bi" id="txbi" class="form-control" value="<?php echo $cli['bi'];?>">
-               <label for="txcasa"> Numero da casa</label>
-               <input type="number" name="ncasa"  id="txcasa" class="form-control" value="<?php echo $cli['casa_num'];?>">
-               <label for="txqt">Quarteirão</label>
-               <input type="number" name="quarteirao" id="txqt" class="form-control" value="<?php echo $cli['quart'];?>">
-               <label for="txcontacto">Contacto</label>
-               <input type="number" name="contacto" id="txcontacto" class="form-control" value="<?php echo $cli['conatcto'];?>">
-               <div class="my-4">
-                   <button class="btn btn-primary" type="submit" > Actualizar</button>
-               </div>
+              <label for="txnome">Nome do funcionario</label>
+              <input type="text" name="nome" id="txnome" class="form-control" value="<?php echo $func['nome_func'];?>">
+              <label for="txcontacto">Contacto</label>
+              <input type="number" name="numero" id="txcontacto" class="form-control" value="<?php echo $func['contacto'];?>">
+              <div class="my-4">
+                <button class="btn btn-primary" type="submit">Cadatsrar
+                  
+                </button>
+              </div>
+
             </div>
           </form>
           
-        </div>      
+        </div>
+        
+      </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bootstrap/js/jquery.js"></script>
