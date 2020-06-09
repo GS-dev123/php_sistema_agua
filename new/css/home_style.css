@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+*{
+    font-family:'Roboto', sans-serif;
+    
+}
+body, .form-control{
+      background: url(../img/background1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+height: auto;
+}
+
+.container{
+position: relative;
+margin-top: 20px;
+width: 500px;
+top: 80px;
+border: 1px solid;
+border-color: #e8e8e8;
+border-radius: 5px;
+}
+.text-center{
+    font-weight: bold;
+    color: white;
+}
+#submit{
+	border-color: white;
+
+}
+input[type=text], input[type=number], #option{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+::-webkit-input-placeholder{
+	color: red;
+}
+
+input[type=placeholder]{
+	color: red;
+}
+#desc{
+position: relative;
+margin-right: auto;
+margin-left: auto;
+}
